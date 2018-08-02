@@ -1,0 +1,103 @@
+.App {
+  font-family: sans-serif;
+}
+.characters {
+  display: block;
+  color: #444;
+  text-align: center;
+  font-size: 12px;
+}
+
+button {
+  border-radius: 50px 50px 50px 50px;
+  background-color: #d3d3d3;
+  color: #444;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  font-size: 30px;
+  padding: 5px 0 0 0;
+  margin-bottom: 10px;
+}
+
+.keyboard {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.keys {
+  display: grid;
+  grid-template-areas:
+    "one two three"
+    "four five six"
+    "seven eight nine"
+    "star zero pound"
+    ". call delete";
+}
+
+.one {
+  grid-area: one;
+}
+.two {
+  grid-area: two;
+}
+.three {
+  grid-area: three;
+}
+.four {
+  grid-area: four;
+}
+.five {
+  grid-area: five;
+}
+.six {
+  grid-area: six;
+}
+.seven {
+  grid-area: seven;
+}
+.eight {
+  grid-area: eight;
+}
+.nine {
+  grid-area: nine;
+}
+.star {
+  grid-area: star;
+}
+.zero {
+  grid-area: zero;
+}
+.pound {
+  grid-area: pound;
+}
+.call {
+  grid-area: call;
+}
+.call > button {
+  background-color: #4cd964;
+}
+.delete-button {
+  border: 0px;
+  background-color: white;
+  text-align: center;
+}
+.delete {
+  visibility: hidden;
+  box-sizing: border-box;
+  grid-area: delete;
+}
+.display-area {
+  height: 50px;
+  text-align: right;
+  font-size: 30px;
+  padding-right: 9%;
+}
+
+.keyboard {
+  text-align: center;
+  border: 1px solid black;
+}
+button span {
+  pointer-events: none;
+}
